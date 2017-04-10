@@ -759,3 +759,14 @@ article {
 @media only screen and (min-width: 800px) {
     #rh-subscribe { top:-30px!important; }
 }
+
+
+dt {
+    font-weight: normal!important;
+    color: #999;
+    margin-bottom: 0!important;
+}
+dd {
+    font-weight: bold;
+    margin-bottom: 20px!important;
+}
