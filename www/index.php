@@ -1,14 +1,7 @@
-<?php
-header('Location:http://interactive.nydailynews.com/pulitzers/2017/');
-die(); 
-//include('env.php');
-//include(CLASS_PATH . 'class.csv.php');
-include('../class.csv.php');
-$csv = new parseCSV('data.csv');
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The NY Daily News quizzes, by the NY Daily News</title>
+    <title>The New York Daily News' Pulitzers</title>
     <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 	<!-- DEFAULT -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,36 +12,36 @@ $csv = new parseCSV('data.csv');
     <meta name="format-detection" content="telephone=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <!-- The NY Daily News quizzesS-->
-    <meta property="og:title" content='The NY Daily News quizzes' />
-    <meta name="twitter:title" content='The NY Daily News quizzes'/>
-    <meta name="parsely-title" content='The NY Daily News quizzes' />
+    <!-- The New York Daily News' PulitzersS-->
+    <meta property="og:title" content="The New York Daily News' Pulitzers" />
+    <meta name="twitter:title" content="The New York Daily News' Pulitzers"/>
+    <meta name="parsely-title" content="The New York Daily News' Pulitzers" />
 
-    <!-- Look at all the news and entertainment and sports quizzes from the New York Daily News-->
-    <meta name="description" content="Look at all the news and entertainment and sports quizzes from the New York Daily News" />
-    <meta property="og:description" content="Look at all the news and entertainment and sports quizzes from the New York Daily News" />
-    <meta name="twitter:description" content="Look at all the news and entertainment and sports quizzes from the New York Daily News" />
+    <!-- A collection of the New York Daily News' Pulitzer Prize-winning work-->
+    <meta name="description" content="A collection of the New York Daily News' Pulitzer Prize-winning work" />
+    <meta property="og:description" content="A collection of the New York Daily News' Pulitzer Prize-winning work" />
+    <meta name="twitter:description" content="A collection of the New York Daily News' Pulitzer Prize-winning work" />
 
     <!-- KEYWORD -->
-    <meta name="keywords" content="quiz,quizzes,news quiz,new york city" />
-    <meta name="news_keywords" content="quiz,quizzes,news quiz,new york city" />
-    <meta name="parsely-tags" content="interactive" />
+    <meta name="keywords" content="Pulitzer,Pulitzer Prize,New York Daily News" />
+    <meta name="news_keywords" content="Pulitzer,Pulitzer Prize,New York Daily News" />
+    <meta name="parsely-tags" content="interactive,Pulitzer,Pulitzer Prize,New York Daily News" />
 
     <!-- LINK -->
-    <link rel="canonical" href="http://interactive.nydailynews.com/quiz/">
-    <meta property="og:url" content="http://interactive.nydailynews.com/quiz/" />
-    <meta name="twitter:url" content="http://interactive.nydailynews.com/quiz/">
-    <meta name="parsely-link" content="http://interactive.nydailynews.com/quiz/" />
+    <link rel="canonical" href="http://interactive.nydailynews.com/pulitzers/">
+    <meta property="og:url" content="http://interactive.nydailynews.com/pulitzers/" />
+    <meta name="twitter:url" content="http://interactive.nydailynews.com/pulitzers/">
+    <meta name="parsely-link" content="http://interactive.nydailynews.com/pulitzers/" />
 
     <!-- THUMBNAIL IMAGE-->
-    <meta property="og:image" content="http://interactive.nydailynews.com/quiz/img/split_0310.jpg" />
-    <meta name="twitter:image:src" content="http://interactive.nydailynews.com/quiz/img/split_0310.jpg" />
-    <meta name="parsely-image-url" content="http://interactive.nydailynews.com/quiz/img/split_0310.jpg" />
+    <meta property="og:image" content="http://interactive.nydailynews.com/pulitzers/img/split_0310.jpg" />
+    <meta name="twitter:image:src" content="http://interactive.nydailynews.com/pulitzers/img/split_0310.jpg" />
+    <meta name="parsely-image-url" content="http://interactive.nydailynews.com/pulitzers/img/split_0310.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="800" />
 
     <!-- TIME -->
-    <meta name="parsely-pub-date" content="2015-03-11T11:00:00Z" />
+    <meta name="parsely-pub-date" content="2017-04-10T11:00:00Z" />
 
     <!-- NO NEED TO FILL -->
     <meta name="twitter:card" content="summary">
@@ -95,8 +88,8 @@ $csv = new parseCSV('data.csv');
     <script>
     var nydnDO = [
         { 
-            'title':'xxxThe NY Daily News quizzesxxx', 
-            'link':'http://interactive.nydailynews.com/quiz/', 
+            'title':"xxxThe New York Daily News' Pulitzersxxx", 
+            'link':'http://interactive.nydailynews.com/pulitzers/', 
             'p_type':'interactive', 
             'section':'interactive' }
     ];
@@ -117,14 +110,13 @@ $csv = new parseCSV('data.csv');
           node.parentNode.insertBefore(gads, node);
           })();
         var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        var quiz_ad_tag = 'quiz';
-        if ( typeof appConfig !== 'undefined' ) quiz_ad_tag += '-' + appConfig.ad_tag;
+        var ad_tag = 'pulitzers';
         </script>
         <script>
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x50");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -135,7 +127,7 @@ $csv = new parseCSV('data.csv');
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x55");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -146,7 +138,7 @@ $csv = new parseCSV('data.csv');
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x55");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -157,7 +149,7 @@ $csv = new parseCSV('data.csv');
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x86");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -169,7 +161,7 @@ $csv = new parseCSV('data.csv');
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x101");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -180,7 +172,7 @@ $csv = new parseCSV('data.csv');
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x35");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -191,7 +183,7 @@ $csv = new parseCSV('data.csv');
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x36");          
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -202,7 +194,7 @@ $csv = new parseCSV('data.csv');
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",ad_tag)
           .setTargeting("position","x37");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -291,7 +283,7 @@ $csv = new parseCSV('data.csv');
         </div>
         <div id="rh-center">
             <a id="rh-logo" href="http://www.nydailynews.com">New York Daily News</a> 
-            <a id="rh-front" href="http://interactive.nydailynews.com/quiz/"> News Quizzes </a>
+            <a id="rh-front" href="http://interactive.nydailynews.com/pulitzers/"> News Quizzes </a>
         </div>
         <div id="rh-right">
             <div id="rh-ssm">
@@ -337,7 +329,7 @@ $csv = new parseCSV('data.csv');
             <div class="rho-subscribe-bg" style=""></div>
         </div>
     </div>
-<nav id="rh-subnav"> <div id="rh-subnav-wrap"><ul class="ra-share" id="ra-share-top"> <li class="ra-share-f"> <a target="_blank" href="#">facebook</a> </li> <br clear="all"> <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=Look at all the news and entertainment and sports quizzes from the New York Daily News%20http://interactive.nydailynews.com/quiz/">Tweet</a> </li>  <li class="ra-share-e"> <a href="mailto:?subject=The NY Daily News quizzes&amp;body=Look at all the news and entertainment and sports quizzes from the New York Daily News %0A%0A http://interactive.nydailynews.com/quiz/">email</a> </li> </ul></div></div>
+<nav id="rh-subnav"> <div id="rh-subnav-wrap"><ul class="ra-share" id="ra-share-top"> <li class="ra-share-f"> <a target="_blank" href="#">facebook</a> </li> <br clear="all"> <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=A collection of the New York Daily News' Pulitzer Prize-winning work%20http://interactive.nydailynews.com/pulitzers/">Tweet</a> </li>  <li class="ra-share-e"> <a href="mailto:?subject=The New York Daily News' Pulitzers&amp;body=A collection of the New York Daily News' Pulitzer Prize-winning work %0A%0A http://interactive.nydailynews.com/pulitzers/">email</a> </li> </ul></div></div>
  </nav>
 </header>
 <!-- SITEHEADER-END -->
@@ -346,23 +338,42 @@ $csv = new parseCSV('data.csv');
 
  </div> 
   <article>
-    <h1 class="center">NY Daily News Quizzes</h1>
-    <p class="description center">Look at all the news and entertainment and sports quizzes from the New York Daily News</p>
-<?php
-$prev_year = '';
-foreach ( $csv->data as $key => $item ):
-    if ( trim($item['year']) != trim($prev_year) ): 
-		if ( $prev_year != '' ) echo '	</ul>';
-		$prev_year = $item['year'];
-?>
-    <h2><?php echo $item['year']; ?> news quizzes</h2>
-	<ul>
-<?php endif;
-    echo "      <li><a href='" . $item['url'] . "'>" . $item['title'] . "</a></li>\n";
-endforeach;
-?>
-	</ul>
+    <h1>The New York Daily News' Pulitzers</h1>
+    <p class="description">A collection of the New York Daily News' Pulitzer Prize winners and finalists</p>
     
+	<dl>
+		<dt>2017</dt>
+		<dd><a href="2017/">Pulitzer Prize Winner in Public Service: New York Daily News and ProPublica</a></dd>
+		<dt>2010</dt>
+		<dd>Pulitzer Prize finalist in Breaking News Photography</dd>
+		<dt>2007</dt>
+		<dd>Pulitzer Prize winner in Editorial Writing: Arthur Browne, Beverly Weintraub and Heidi Evans</dd>
+		<dt>1999</dt>
+		<dd>Pulitzer Prize winner in Editorial Writing: Editorial Board of the New York Daily News</dd>
+		<dt>1998</dt>
+		<dd>Pulitzer Prize winner in Commentary: Mike McAlary</dd>
+		<dt>1996</dt>
+		<dd>Pulitzer Prize winner in Commentary: E.R. Shipp</dd>
+		<dt>1990</dt>
+		<dd>Pulitzer Prize finalist in Feature Writing: Mark Kriegel</dd>
+		<dt>1986</dt>
+		<dd>Pulitzer Prize winner in Commentary: Jimmy Breslin</dd>
+		<dt>1982</dt>
+		<dd>Pulitzer Prize finalist in Public Service: New York Daily News</dd>
+		<dt>1981</dt>
+		<dd>Pulitzer Prize finalist in National Reporting: Joseph Volz, Richard Edmonds, Bob Herbert and Alton Slagle</dd>
+		<dt>1974</dt>
+		<dd>Pulitzer Prize winner in Local Investigative Specialized Reporting: William Sherman</dd>
+		<dt>1959</dt>
+		<dd>Pulitzer Prize winner in International Reporting: Joseph Martin and Philip Santora</dd>
+		<dt>1956</dt>
+		<dd>Pulitzer Prize winner in Photography: New York Daily News</dd>
+		<dt>1941</dt>
+		<dd>Pulitzer Prize winner in Editorial Writing: Reuben Maury</dd>
+		<dt>1937</dt>
+		<dd>Pulitzer Prize winner in Editorial Cartooning: C.D. Batchelor</dd>
+	</dl>
+
   <div class="center" style="margin-bottom: 18px">
     <span style="font-size:10px; color:#999;font-family:sans-serif;">ADVERTISEMENT</span>
     <div id='div-gpt-ad-1423507761396-1'>
@@ -375,17 +386,6 @@ endforeach;
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" />
         <link href="css/style.css?v2" rel="stylesheet" type="text/css" />
         <script src="js/social.js" defer></script>
-<hr>
-  <div class="center" style="margin-bottom: 18px">
-    <span style="font-size:10px; color:#999;font-family:sans-serif;">ADVERTISEMENT</span>
-    <div id='div-gpt-ad-1423507761396-2'>
-              <script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });
-              </script>
-    </div>
-  </div>
-<hr>
-
   </article>
  
   
