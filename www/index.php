@@ -282,7 +282,7 @@
         </div>
         <div id="rh-center">
             <a id="rh-logo" href="http://www.nydailynews.com">New York Daily News</a> 
-            <a id="rh-front" href="http://interactive.nydailynews.com/pulitzers/"> News Quizzes </a>
+            <a id="rh-front" href="http://interactive.nydailynews.com/pulitzers/"> Pulitzers </a>
         </div>
         <div id="rh-right">
             <div id="rh-ssm">
