@@ -76,7 +76,6 @@
       
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
-	<link rel="stylesheet" href="http://interactive.nydailynews.com/css/foundation.css" />
 	<link href="http://interactive.nydailynews.com/css/style.css?v2" rel="stylesheet" type="text/css" />
     <script>
     var nydn = nydn || {
