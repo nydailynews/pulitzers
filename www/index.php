@@ -72,10 +72,12 @@
     <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=2016LIST" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
+    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
       
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
+	<link rel="stylesheet" href="http://interactive.nydailynews.com/css/foundation.css" />
+	<link href="http://interactive.nydailynews.com/css/style.css?v2" rel="stylesheet" type="text/css" />
     <script>
     var nydn = nydn || {
         "section": "NYDailyNews",
@@ -95,111 +97,7 @@
     </script>
     
     <!-- ADS-START -->
-     <!-- ads -->
-        <script>
-          var googletag = googletag || {};
-          googletag.cmd = googletag.cmd || [];
-          (function() {
-          var gads = document.createElement('script');
-          gads.async = true;
-          var useSSL = 'https:' == document.location.protocol;
-          gads.src = (useSSL ? 'https:' : 'http:') + 
-          '//www.googletagservices.com/tag/js/gpt.js';
-          var node = document.getElementsByTagName('script')[0];
-          node.parentNode.insertBefore(gads, node);
-          })();
-        var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        var ad_tag = 'pulitzers';
-        </script>
-        <script>
-      if( !is_mobile ) {
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x50");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>
-      <script>
-      if( !is_mobile ) {
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x55");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>
-        <script>
-      if( !is_mobile ) {
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x55");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>
-      <script>
-      if( !is_mobile ) {
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x86");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>
-        <!-- mobile ad -->
-        <script>
-        if( is_mobile ) {        
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x101");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x35");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x36");          
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",ad_tag)
-          .setTargeting("position","x37");
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-        }
-        </script>
+	<script onload="nydn_ads('one');" src="http://interactive.nydailynews.com/includes/ads/ads.js"></script>
     <!-- ADS-END -->
 </head>
 <body id="nydailynews" data-section="nydailynews" data-subsection="NY Daily News" class="">
@@ -381,9 +279,6 @@
               </script>
     </div>
   </div>
-        <!-- CUSTOM CSS GOES HERE-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" />
-        <link href="css/style.css?v2" rel="stylesheet" type="text/css" />
         <script src="js/social.js" defer></script>
   </article>
  
@@ -452,6 +347,17 @@
         </div>
     </div>
 </footer>
+<style>
+.center {
+    margin: auto;
+    text-align: center;
+}
+.ad > span {
+    font-size:10px;
+    color:#999;
+    font-family:sans-serif;
+}
+</style>
 <div id="ra-bp"></div> <section id="rao">  <div id="rao-close"></div> <div id="rao-wrap"></div> </section> 
 <div id="r-scripts">
     <div id="parsely-root" style="display: none">
