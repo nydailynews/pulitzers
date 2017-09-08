@@ -76,7 +76,7 @@
       
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
-	<link href="http://interactive.nydailynews.com/css/style.css?v2" rel="stylesheet" type="text/css" />
+	<link href="http://interactive.nydailynews.com/css/style.css?v3" rel="stylesheet" type="text/css" />
     <script>
     var nydn = nydn || {
         "section": "NYDailyNews",
@@ -235,7 +235,7 @@
  </div> 
   <article>
     <h1>The New York Daily News' Pulitzers</h1>
-    <p class="description">A collection of the New York Daily News' Pulitzer Prize winners and finalists</p>
+    <p>A collection of the New York Daily News' Pulitzer Prize winners and finalists</p>
     
 	<dl>
 		<dt>2017</dt>
